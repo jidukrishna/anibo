@@ -12,7 +12,7 @@ animelist = {"Top Anime Series": "", "Top Airing Anime": "airing", "Top Upcoming
 session = keyringstorage.confirm()
 
 headers = {"session": session}
-request_url = "https://api.jiduk.me/"
+request_url = "http://127.0.0.1:8000/"
 
 headers_url = {"url": request_url, "session": headers}
 

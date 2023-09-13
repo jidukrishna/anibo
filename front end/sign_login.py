@@ -20,7 +20,7 @@ pass2show = 0
 email_user = password_user = ""
 email_user_reset = password_user_reset = ""
 
-request_url = "https://api.jiduk.me"
+request_url = "http://127.0.0.1:8000"
 
 ipv4 = socket.gethostbyname(socket.gethostname())
 hover_color = "#1ea61e"

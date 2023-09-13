@@ -45,7 +45,7 @@ os.chdir(wkdir)
 hover_color = "#1ea61e"
 
 ipv4 = socket.gethostbyname(socket.gethostname())
-request_url = "https://api.jiduk.me/"
+request_url = "http://127.0.0.1:8000/"
 
 current_epi_anime = "nothing is playing as of now"
 last_epi = None

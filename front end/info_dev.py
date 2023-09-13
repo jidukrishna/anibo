@@ -3,7 +3,7 @@ from info_dev2 import *
 import keyringstorage
 from arrange import word_fixer
 
-request_url = "https://api.jiduk.me/"
+request_url = "http://127.0.0.1:8000/"
 session = keyringstorage.confirm()
 
 headers = {"session": session}
