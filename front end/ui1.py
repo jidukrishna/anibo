@@ -475,6 +475,7 @@ class anime_epi_info(c.CTkFrame):
                 switch.select(1)
 
             def url_host():
+                fl_frame.clipboard_clear()
                 fl_frame.clipboard_append(f"http://{ipv4}:9000/anime")
 
             copy_url = c.CTkButton(fl_frame, text="copy url", command=url_host, width=120, fg_color="green",
