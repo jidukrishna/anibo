@@ -96,7 +96,6 @@ def timing(func):
 
     return wrap
 
-
 # switch between win signup/login
 def change_to_login():
     login_signup(main_win)
@@ -116,6 +115,7 @@ def check_server():
         messagebox.showwarning(message="check your net or server not running")
         return False
 
+c.set_appearance_mode("dark")
 
 # main app class
 class App(c.CTk):
@@ -128,7 +128,7 @@ class App(c.CTk):
         global main_win
         main_win = self
         if not check_server(): return
-        self._set_appearance_mode("white")
+        
 
         self.minsize(width=1100, height=688)
 
