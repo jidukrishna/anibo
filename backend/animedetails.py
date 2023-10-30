@@ -91,7 +91,7 @@ def anime_epi_link(link):
 
     def consumet(link):
         global video_link
-        url = f"http://127.0.0.1:3000/anime/gogoanime/watch/{link}"
+        url = f"https://api.consumet.org/anime/gogoanime/watch/{link}"
         response = requests.get(url)
         data = response.json()
         video_link = data["sources"][-2]["url"]
