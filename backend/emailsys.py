@@ -9,9 +9,11 @@ import random
 from fastapi import HTTPException
 
 # start the smtp port for emails
-s = smtplib.SMTP('smtp.gmail.com', 587)
+s = smtplib.SMTP('smtp.office365.com', 587)
 s.starttls()
-s.login(user='ur mail', password='mail password')
+email_id_smtp="aniboexe@outlook.com"
+password_smtp="Jidu@123"
+s.login(user=email_id_smtp, password=password_smtp)
 
 # create tables and databases
 with sqlite3.connect('user.db', check_same_thread=False) as db:
@@ -93,7 +95,7 @@ def sendemail(a, email, typemail):
     ti = f'{format["title"]}'
     message = 'Subject: {}\n\n{}'.format(ti, mes)
     message = str(message)
-    s.sendmail(from_addr='pythonamap@gmail.com', to_addrs=email, msg=message)
+    s.sendmail(from_addr=email_id_smtp, to_addrs=email, msg=message)
 
 # func for reseting . user will be checked and otp will be sent
 def forgot_first_step(email: str, table_needed="pass_reset", meesg="reset"):
