@@ -5,4 +5,4 @@ make sure u have python9+ installed and its in path.
 run the setupfile.py
 after that run the setupfile2.py
 
-https://vimeo.com/864410610
+# https://vimeo.com/864410610
